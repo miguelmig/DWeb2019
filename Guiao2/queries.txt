@@ -1,0 +1,13 @@
+Exercicio 6
+
+1)
+
+//ARQELEM/IDENTI[../TIPO/@ASSUNTO="arqueossitio" and contains(../CONCEL, "Amares")]
+
+2)
+
+distinct-values(//ARQELEM/normalize-space(CONCEL[../TIPO/@ASSUNTO="arqueossitio"]))
+
+3)
+
+//ARQELEM/DESARQ[../TIPO/@ASSUNTO="arqueossitio" and contains(../CONCEL, "Montalegre")] 

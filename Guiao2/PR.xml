@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PR SYSTEM "file:/C:/Users/migue/Dropbox/Universidade/Desenvolvimento%20Web/Guiao2/PR.dtd">
+<PR>
+    <header>
+        <key-name>DAW_MEI2019_TPCS</key-name>
+        <titulo>Esquemas DTD e queries XPath</titulo>
+        <sub-titulo>Inserido no contexto do TPC2</sub-titulo>
+        <data-inicio>Setembro 2019</data-inicio>
+        <data-fim>Setembro 2019</data-fim>
+        <supervisor link="http://www.di.uminho.pt/~jcr">
+            <supervisor-nome>José Carlos Ramalho</supervisor-nome>
+        </supervisor>
+    </header>
+    <work-team>
+        <work-element>
+            <work-nr>PG41088</work-nr>
+            <work-name>Miguel Pimentel de Oliveira</work-name>
+            <work-mail>pg41088@alunos.uminho.pt</work-mail>
+        </work-element>
+    </work-team>
+    <abstract></abstract>
+    <deliverables>
+        <deliverable src="PR.dtd">Ficheiro especificação(.dtd) do ficheiro PR</deliverable>
+        <deliverable src="queries.txt">Queries XPath da Ficha 3 Exercício 6</deliverable>
+        <deliverable src="arq.dtd">Ficheiro especificação(.dtd) da Ficha 3 Exercício 7</deliverable>
+    </deliverables>
+</PR>
