@@ -2,7 +2,7 @@
 
 <!ELEMENT PR (header,work-team,abstract,deliverables) >
 
-<!ELEMENT header (key-name, titulo, sub-titulo, data-inicio, data-fim, supervisor) >
+<!ELEMENT header (key-name, titulo, sub-titulo?, data-inicio, data-fim, supervisor) >
 <!ELEMENT key-name (#PCDATA)>
 <!ELEMENT titulo (#PCDATA)>
 <!ELEMENT sub-titulo (#PCDATA)>
