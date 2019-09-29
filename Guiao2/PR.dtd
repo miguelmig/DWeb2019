@@ -19,11 +19,12 @@
 <!ELEMENT work-mail (#PCDATA)>
 <!ELEMENT work-git (#PCDATA)>
 
-<!ELEMENT abstract (#PCDATA|i|b|p)*>
+<!ELEMENT abstract (#PCDATA|i|b|ref)*>
 
 <!ELEMENT i (#PCDATA)>
 <!ELEMENT b (#PCDATA)>
-<!ELEMENT p (#PCDATA)>
+<!ELEMENT ref (#PCDATA)>
+<!ATTLIST ref src CDATA #REQUIRED>
 
 <!ELEMENT deliverables (deliverable*)>
 <!ELEMENT deliverable (#PCDATA)>

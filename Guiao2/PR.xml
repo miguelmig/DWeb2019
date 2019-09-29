@@ -18,7 +18,13 @@
             <work-mail>pg41088@alunos.uminho.pt</work-mail>
         </work-element>
     </work-team>
-    <abstract></abstract>
+    <abstract>
+		Com a intenção de utilizar o modelo <ref src="https://en.wikipedia.org/wiki/Open_Archival_Information_System">OAIS</ref> o professor pediu-nos que 
+			especificássemos o <i>SIP</i> de modo a facilitar as entregas de TPCs no futuro.
+			Para tal foi necessário criar o ficheiro <b>PR.dtd</b> com base no <ref src="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/PR.htm">exemplo</ref> 
+			que nos foi fornecido. 
+		O professor pediu também para ser feito o exercício 6 e 7 da <ref src="http://www4.di.uminho.pt/~jcr/XML/CURSOS/PED2008/fichas/ficha3/index.html">Ficha 3</ref>, relacionado com <b>DTDs</b> e queries de <b>XPath</b> 
+		</abstract>
     <deliverables>
         <deliverable src="PR.dtd">Ficheiro especificação(.dtd) do ficheiro PR</deliverable>
         <deliverable src="queries.txt">Queries XPath da Ficha 3 Exercício 6</deliverable>
