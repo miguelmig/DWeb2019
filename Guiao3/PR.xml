@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PR>
+    <metadata>
+        <keyname>DAW_MEI2019_TPCS</keyname>
+        <title>XSLT e Geração de Websites</title>
+        <subtitle>Inserido no contexto do TPC3</subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">
+            José Carlos Ramalho
+        </supervisor>
+        <bdate>Outubro 2019</bdate>
+        <edate>Outubro 2019</edate>
+    </metadata>
+    
+    <workteam>
+        <worker>
+            <identifier>PG41088</identifier>
+            <name>Miguel Pimentel de Oliveira</name>
+            <email>pg41088@alunos.uminho.pt</email>
+            <git>https://github.com/miguelmig</git>
+        </worker>
+    </workteam>
+    
+    <abstract>
+        <p>
+            Criação de uma stylesheet xsl para transformar o ficheiro PR.xml num ficheiro PR.html.
+        </p>
+        <p>
+        Criação de um website para o ficheiro xml dos arqueossítios.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.xsl">Ficheiro transformação(.xsl) do ficheiro PR</deliverable>
+        <deliverable path="PR.html">Resultado da transformação do PR.xml usando o PR.xsl</deliverable>
+        <deliverable path="arq.xsl">Ficheiro transformação(.xsl) da Ficha 3 "Arqueossítios do Nordeste Português"</deliverable>
+        <deliverable path="html/index.html">Website gerado pela transformação arq.xsl</deliverable>
+    </deliverables>
+</PR>
