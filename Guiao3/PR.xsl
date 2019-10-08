@@ -103,26 +103,26 @@
         <hr/>
     </xsl:template>
     
-    <xsl:template match="abstract/p">
+    <xsl:template match="p">
         <p>
             <xsl:apply-templates/>
         </p>    
     </xsl:template>
     
-    <xsl:template match="abstract/b">
+    <xsl:template match="b">
         <b>
             <xsl:apply-templates/>
         </b>    
     </xsl:template>
     
-    <xsl:template match="abstract/i">
+    <xsl:template match="i">
         <i>
             <xsl:apply-templates/>
         </i>    
     </xsl:template>
     
-    <xsl:template match="abstract/xref">
-        <a href = "{@src}">
+    <xsl:template match="xref">
+        <a href = "{@url}">
             <xsl:apply-templates/>
         </a>    
     </xsl:template>
