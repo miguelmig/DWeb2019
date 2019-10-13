@@ -33,7 +33,7 @@
     </abstract>
     <deliverables>
         <deliverable path="xml-split.xsl">Ficheiro transformação(.xsl) dos Arqueossítios num website com o load do xsl individual embutido</deliverable>
-		<deliverable path="arq2html.xsl">Ficheiro transformação(.xsl) individual para cada Arqueossítio carregado em cada .xml do website</deliverable>
+        <deliverable path="arq2html.xsl">Ficheiro transformação(.xsl) individual para cada Arqueossítio carregado em cada .xml do website</deliverable>
         <deliverable path="server.js">Servidor Web em NodeJS para aceder aos arqueossítios</deliverable>
     </deliverables>
 </PR>
