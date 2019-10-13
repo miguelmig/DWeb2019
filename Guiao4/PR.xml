@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PR>
+    <metadata>
+        <keyname>DAW_MEI2019_TPCS</keyname>
+        <title>Geração de Websites e Servidores Web em NodeJS</title>
+        <subtitle>Inserido no contexto do TPC4</subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">
+            José Carlos Ramalho
+        </supervisor>
+        <bdate>Outubro 2019</bdate>
+        <edate>Outubro 2019</edate>
+    </metadata>
+    
+    <workteam>
+        <worker>
+            <identifier>PG41088</identifier>
+            <name>Miguel Pimentel de Oliveira</name>
+            <email>pg41088@alunos.uminho.pt</email>
+            <git>https://github.com/miguelmig</git>
+        </worker>
+    </workteam>
+    
+    <abstract>
+        <p>
+            Criação de uma stylesheet xsl para transformar o 
+            <xref url="https://www.di.uminho.pt/~jcr/XML/didac/xmldocs/arq.xml">xml de Arqueossítios do Norte de Portugal</xref> num website
+            em que cada arqueossítio está numerado por ordem crescente de aparência no ficheiro xml.
+        </p>
+        <p>
+            Criação de um servidor web em <b>NodeJS</b> que permite acesso aos arqueossítios, introduzindo o respetivo número no
+            <i>url</i>.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="xml-split.xsl">Ficheiro transformação(.xsl) dos Arqueossítios num website com o load do xsl individual embutido</deliverable>
+		<deliverable path="arq2html.xsl">Ficheiro transformação(.xsl) individual para cada Arqueossítio carregado em cada .xml do website</deliverable>
+        <deliverable path="server.js">Servidor Web em NodeJS para aceder aos arqueossítios</deliverable>
+    </deliverables>
+</PR>
