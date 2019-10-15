@@ -59,7 +59,12 @@ function handleSimpleFileRequest(fileName, res)
 
 var server = http.createServer(function (req, res) {
     console.log(req.method + " " + req.url);
-
+    if(req.method != "GET")
+    {
+        console.error("Invalid request method: " + req.method);
+        displayErrorPage(res);
+        return;
+    }
     /* Parse the url and take the pathname only, ignoring the leading '/' */
     var path = url.parse(req.url, true).pathname.substr(1);
     console.log("Path requested: " + path);
