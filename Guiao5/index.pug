@@ -5,19 +5,20 @@ block form_content
 
     .w3-container.w3-section
         .w3-card-4
-            form.w3-container(action='/tarefa', method='POST')
-                .w3-display-container.w3-padding-16
+            form.w3-container.w3-padding-16(action='/tarefa', method='POST')
+                .w3-container.w3-margin-top
                     label Tarefa
-                    input.w3-input.w3-border.w3-light-grey.w3-margin-bottom(type='text', 
+                    input.w3-input.w3-border.w3-light-grey(type='text', 
                         name='nome', 
-                        style='position:relative; top: -28px; left:60px; width:95%')
+                        style='position:relative; top: -28px; left:95px; width:95%')
 
+                .w3-container.w3-margin-top
                     label Data Limite
-                    input.w3-input.w3-border.w3-light-grey.w3-margin-bottom(type='text', 
+                    input.w3-input.w3-border.w3-light-grey(type='text', 
                         name='data',
-                        style='position:relative; top: -28px; left:95px; width:92%')
+                        style='position:relative; top: -28px; left:95px; width:95%')
 
-                    input.w3-btn.w3-blue-grey.w3-margin-bottom(type='submit', value='Enviar', style='position:relative; left:93%')
+                input.w3-btn.w3-blue-grey.w3-padding-large(type='submit', value='Enviar', style='float:right')
 block tasks
     .w3-container.w3-section
         .w3-card-4
