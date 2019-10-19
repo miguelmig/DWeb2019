@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PR>
+    <metadata>
+        <keyname>DAW_MEI2019_TPCS</keyname>
+        <title>Servidores Web em NodeJS</title>
+        <subtitle>Inserido no contexto do TPC5</subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">
+            José Carlos Ramalho
+        </supervisor>
+        <bdate>Outubro 2019</bdate>
+        <edate>Outubro 2019</edate>
+    </metadata>
+    
+    <workteam>
+        <worker>
+            <identifier>PG41088</identifier>
+            <name>Miguel Pimentel de Oliveira</name>
+            <email>pg41088@alunos.uminho.pt</email>
+            <git>https://github.com/miguelmig</git>
+        </worker>
+    </workteam>
+    
+    <abstract>
+        <p>
+            Criação de diversos ficheiros <xref url="https://pugjs.org">pug</xref> para estruturar a página web.
+        </p>
+        <p>
+            Criação de um servidor web em <b>NodeJS</b> que permite introduzir, visualizar e remover Tarefas.
+        </p>
+		<p>
+            Uso de um ficheiro <b>JSON</b> para armazenar as informações das tarefas.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="layout.pug">Ficheiro pug com estrutura genérica para o website</deliverable>
+        <deliverable path="erro.pug">Ficheiro pug para página de erro</deliverable>
+        <deliverable path="index.pug">Ficheiro pug para página geral do website</deliverable>
+        <deliverable path="stylesheet/w3.css">Ficheiro css para dar estilo ao website</deliverable>
+        <deliverable path="server.js">Servidor Web em NodeJS para aceder ao website</deliverable>
+    </deliverables>
+</PR>
