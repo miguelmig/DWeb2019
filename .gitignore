@@ -1,0 +1,8 @@
+Aula*/
+Exemplo/
+# DTD para o PR de acordo com a estrutura do professor
+PR.dtd
+
+# Ignorar ficheiros do Node
+Guiao*/package-lock.json
+Guiao*/node_modules/
