@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PR>
+    <metadata>
+        <keyname>DAW_MEI2019_TPCS</keyname>
+        <title>Servidores Web em NodeJS</title>
+        <subtitle>Inserido no contexto do TPC6</subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">
+            José Carlos Ramalho
+        </supervisor>
+        <bdate>Outubro 2019</bdate>
+        <edate>Outubro 2019</edate>
+    </metadata>
+    
+    <workteam>
+        <worker>
+            <identifier>PG41088</identifier>
+            <name>Miguel Pimentel de Oliveira</name>
+            <email>pg41088@alunos.uminho.pt</email>
+            <git>https://github.com/miguelmig</git>
+        </worker>
+    </workteam>
+    
+    <abstract>
+        <p>
+            Criação de diversos ficheiros view em <xref url="https://pugjs.org">pug</xref> para estruturar a página web.
+        </p>
+		<p>
+			Criação de um ficheiro <b>convert.py</b> para converter o arquivo sonoro de xml para json.
+		</p>
+        <p>
+            Criação de um servidor web em <b>NodeJS</b> que permite inserir, editar, visualizar e remover Músicas do Arquivo Sonoro.
+        </p>
+		<p>
+            Uso de um ficheiro <b>JSON</b> para armazenar as informações das tarefas.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="convert.py">Ficheiro em python conversão de xml para json</deliverable>
+        <deliverable path="arq-son-EVO.json">Ficheiro convertido em json</deliverable>
+        <deliverable path="routes/index.js">Ficheiro javascript que trata todas as operações</deliverable>
+        <deliverable path="views/index.pug">Ficheiro pug para página geral do website</deliverable>
+        <deliverable path="views/add-item.pug">Ficheiro pug para inserir nova musica</deliverable>
+        <deliverable path="views/edit-item.pug">Ficheiro pug para editar músicas já existentes</deliverable>
+        <deliverable path="views/error.pug">Ficheiro pug para página de erro</deliverable>
+        <deliverable path="views/item.pug">Ficheiro pug para visualizar a informação de uma música</deliverable>
+        <deliverable path="views/layout.pug">Ficheiro pug com a estrutura base para os outros pugs</deliverable>
+        <deliverable path="public/stylesheets/style.css">Ficheiro css para dar estilo ao website</deliverable>
+        <deliverable path="public/javascripts/adicionar.js">Ficheiro javascript para adicionar musicas</deliverable>
+        <deliverable path="public/javascripts/apagar.js">Ficheiro javascript para apagar musicas</deliverable>
+        <deliverable path="public/javascripts/editar.js">Ficheiro javascript para editar musicas</deliverable>
+        <deliverable path="public/javascripts/visualizar.js">Ficheiro javascript para visualizar musicas</deliverable>
+    </deliverables>
+</PR>

@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  header.w3-container.w3-teal.w3-card-4
+        h1.w3-center #{title}
+
+  button.w3-button.w3-blue-grey.w3-margin-left.w3-margin-top(onclick='adicionarItem()') Adicionar
+  .w3-container.w3-section
+        .w3-card-4
+          table.w3-table.w3-table-all
+              tr 
+                th Titulo
+                th Visualizar
+                th Editar
+                th Remover
+              each arq_son in content
+                tr
+                  td= arq_son.tit
+                  td
+                    button.w3-button.w3-blue-grey(onclick='visualizaItem("' + arq_son.id + '")') Visualizar
+                  td
+                    button.w3-button.w3-blue-grey(onclick='editaItem("' + arq_son.id + '")') Editar
+                  td
+                    button.w3-button.w3-blue-grey(onclick='confirmDelete("' + arq_son.id + '")') Remover
+  #modal.w3-modal
+    .w3-modal-content.w3-card-4
+      header.w3-container.w3-teal.w3-card-4.w3-center
+        h3 Remover
+      .w3-container.w3-padding
+        p Certeza que queres remover este arquivo sonoro?
+        button#confirm.w3-button.w3-blue-grey Remove
+        a(href='/')
+          button.w3-right.w3-btn.w3-blue-gray Voltar 
+
+          

@@ -1,0 +1,53 @@
+extends index
+
+block item
+  .w3-modal(style='display:block;')
+    .w3-modal-content.w3-card-4
+      header.w3-container.w3-teal.w3-card-4.w3-center
+        h3 #{song.tit}
+      .w3-container.w3-margin.w3-padding.w3-section
+        form#form.w3-container.w3-padding-16(onsubmit='return sendEditarItem(' + song.id +')')
+          b
+            label Província
+          input.w3-input.w3-border(type="text" name="prov", value=song.prov)
+          br
+          b
+            label Local
+          input.w3-input.w3-border(type="text" name="local", value=song.local)
+          br
+          b
+            label Título
+          input.w3-input.w3-border(type="text" name="tit", value=song.tit)
+          br
+          b
+            label Músico
+          input.w3-input.w3-border(type="text" name="musico", value=song.musico)
+          br
+          b
+            label Instrumentos
+          input.w3-input.w3-border(type="text" name="inst", value=song.inst)
+          br
+          b
+            label Observações
+          input.w3-input.w3-border(type="text" name="obs", value=song.obs['@text'])
+          br
+          b
+            label Ficheiro
+          .w3-container.w3-border
+              .w3-container.w3-third.w3-left
+                  b
+                    label Tipo
+                  input.w3-input.w3-border(type="text" name="file_type", value=song.file['@t'])
+              .w3-container.w3-rest
+                  b
+                    label Nome
+                  input.w3-input.w3-border(type="text" name="file_name", value=song.file['#text'])
+              br
+          br
+          b
+            label Duração
+          input.w3-input.w3-border(type="text" name="duracao", value=song.duracao)
+          br
+          input.w3-btn.w3-blue-gray(type="submit" value="Editar")
+        a(href='/')
+          button.w3-right.w3-btn.w3-blue-gray Voltar 
