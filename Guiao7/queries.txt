@@ -9,4 +9,4 @@
 
 3. Que atores participaram em filmes do género "Comedy":
 
-  db.filmes.aggregate([{$unwind: "$genres"}, {$unwind: "$cast"}, {$group: {_id: "$genres", filmes: {$push: "$cast"}}}, {$match: {_id: "Comedy"}}])
+  db.filmes.aggregate([{$unwind: "$genres"}, {$unwind: "$cast"}, {$group: {_id: "$genres", atores: {$push: "$cast"}}}, {$match: {_id: "Comedy"}}])
