@@ -24,18 +24,6 @@ function loadFilmesFromDB()
   });
 }
 
-field_names = {
-  "prov":"Província",
-  "local":"Local",
-  "tit":"Titulo",
-  "musico":"Autor",
-  "duracao":"Duração",
-  "inst": "Instrumentos",
-  "file.@t":"Tipo de Ficheiro",
-  "file.#text":"Nome do Ficheiro",
-  "obs.#text": "Observação(Texto)",
-}
-
 title = "Arquivo de Filmes"
 
 function displayErrorPage(res, err)
