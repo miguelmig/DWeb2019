@@ -44,5 +44,6 @@
         <deliverable path="public/javascripts/apagar.js">Ficheiro javascript para apagar filmes</deliverable>
         <deliverable path="public/javascripts/editar.js">Ficheiro javascript para editar filmes</deliverable>
         <deliverable path="public/javascripts/visualizar.js">Ficheiro javascript para visualizar filmes</deliverable>
+        <deliverable path="queries.txt">Queries pedidas pelo Professor</deliverable>
     </deliverables>
 </PR>

@@ -217,7 +217,7 @@ function editFilm(content, id, form_data)
 }
 
 /* GET home page. */
-router.get('/', function(req, res, next) 
+router.get('/filmes', function(req, res, next) 
 {
   getContent().then( (content) => {
     displayPage(res, content);
@@ -226,7 +226,7 @@ router.get('/', function(req, res, next)
   
 });
 
-router.get('/visualize-item/:id/', function (req, res, next)
+router.get('/filmes/:id/', function (req, res, next)
 {
   getContent().then( (content) => {
     displayItem(res, content, req.params.id);
@@ -247,7 +247,7 @@ router.get('/add-item/', function (req, res, next)
   displayAddItem(res);
 })
 
-router.delete('/:id/', function (req,res,next) {
+router.delete('/filmes/:id/', function (req,res,next) {
   var id = req.params.id;
   console.log("deleting: " + id);
   deleteArchive(res, id).then( () => {
@@ -256,14 +256,14 @@ router.delete('/:id/', function (req,res,next) {
   .catch(err => console.error(err));
 })
 
-router.post('/add/', function (req,res,next) {
+router.post('/filmes/', function (req,res,next) {
   addFilm(req.body).then( () => {
     content = null;
-    res.redirect('/');
+    res.redirect('/filmes');
   });
 })
 
-router.put('/edit/:id', function (req, res, next) {
+router.put('/filmes/:id', function (req, res, next) {
   getContent().then( (content) => {
     editFilm(content, req.params.id, req.body);
     res.end('0');

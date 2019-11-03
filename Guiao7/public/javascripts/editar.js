@@ -20,6 +20,6 @@ function sendEditarItem(id)
     const formData = new FormData(formElement);
     const formEntries = formData.entries();
     const json = Object.assign(...Array.from(formEntries, ([x,y]) => ({[x]:y})));
-    axios.put('/edit/' + id, json).then(_ => window.location.assign('/'));
+    axios.put('/filmes/' + id, json).then(_ => window.location.assign('/filmes'));
     return false;
 }

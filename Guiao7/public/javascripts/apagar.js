@@ -9,7 +9,7 @@ function confirmDelete(id)
 function apagaItem(id)
 {
     console.log('Vou tentar apagar o ' + id + '...');
-    axios.delete('/' + id)
-        .then(response => window.location.assign('/'))
+    axios.delete('/filmes/' + id)
+        .then(response => window.location.assign('/filmes'))
         .catch(error => console.log(error));
 }

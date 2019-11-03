@@ -3,7 +3,7 @@ function visualizaItem(id)
 {
     console.log('Vou tentar visualizar o ' + id + '...');
     //document.getElementById('modal').style.display='block';
-    axios.get('/visualize-item/' + id)
+    axios.get('/filmes/' + id)
         .then(response => fillModal(response.data))
         .catch(error => console.log(error));
 }
