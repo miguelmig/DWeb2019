@@ -11,6 +11,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/daw2019', {useNewUrlParser: true, us
 
 
 var obrasRouter = require('./routes/obras');
+var entidadesRouter = require('./routes/entidades');
 
 var app = express();
 
@@ -24,8 +25,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', obrasRouter);;
-
+app.use('/', obrasRouter);
+app.use('/entidades', entidadesRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

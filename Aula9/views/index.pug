@@ -5,16 +5,23 @@ block content
     h1.w3-center #{title}
   
   .w3-container.w3-section
-    a(href='/nobel/premios')
-      button.w3-btn.w3-bar.w3-blue-gray Listar Todos os Premios
-  .w3-container.w3-section
-    a(href='/nobel/premios-search')
-      button.w3-btn.w3-bar.w3-blue-gray Listar Premios Por Ano/Categoria
-  .w3-container.w3-section
-    a(href='/nobel/categorias')
-      button.w3-btn.w3-bar.w3-blue-gray Listar Categorias
-  .w3-container.w3-section
-    a(href='/nobel/laureados')
-      button.w3-btn.w3-bar.w3-blue-gray Listar Laureados
-
+    .w3-card-4
+      table.w3-table.w3-table-all
+        tr
+          th Sigla
+          th Designação
+          th Internacional
+          th Ver
+        each entity in entities        
+          tr
+            td= entity.sigla
+            td= entity.designacao
+            if entity.internacional !== ""
+              td= entity.internacional
+            else
+              td= "Não"
+            td
+              a(href='/entidades/' + entity.id)
+                button.w3-button.w3-blue-grey Visualizar
+            
 
