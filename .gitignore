@@ -6,3 +6,7 @@ PR.dtd
 # Ignorar ficheiros do Node
 Guiao*/package-lock.json
 Guiao*/node_modules/
+
+# Avaliação na aula
+!Aula9/
+Aula9/node_modules/
