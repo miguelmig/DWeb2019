@@ -1,0 +1,11 @@
+{
+  "name": "mongoimport",
+  "version": "1.0.0",
+  "description": "Command Line utility to do mongoimport",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "mpo",
+  "license": "ISC"
+}

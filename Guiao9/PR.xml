@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PR>
+    <metadata>
+        <keyname>DAW_MEI2019_TPCS</keyname>
+        <title>Servidores Web em NodeJS com recurso a MongoDB e Utilitário em Linha de Comandos</title>
+        <subtitle>Inserido no contexto do TPC9</subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">
+            José Carlos Ramalho
+        </supervisor>
+        <bdate>Novembro 2019</bdate>
+        <edate>Novembro 2019</edate>
+    </metadata>
+    
+    <workteam>
+        <worker>
+            <identifier>PG41088</identifier>
+            <name>Miguel Pimentel de Oliveira</name>
+            <email>pg41088@alunos.uminho.pt</email>
+            <git>https://github.com/miguelmig</git>
+        </worker>
+    </workteam>
+    
+    <abstract>
+        <p>
+            Criação de um servidor web em NodeJS para servir de API para a base de dados de compositores, com recurso a <b>MongoDB</b> e <b>Mongoose</b>.
+        </p>
+		<p>
+            Criação de um utilitário em NodeJS que facilita o uso do <b>mongoimport</b>
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="MongoImport/index.js">Ficheiro javascript para o utilitário do mongoimport</deliverable>
+        <deliverable path="CompositoresAPI/">Aplicação Web que serve como API</deliverable>
+        <deliverable path="CompositoresAPI/routes/index.js">Ficheiro javascript para a raiz do website</deliverable>
+        <deliverable path="CompositoresAPI/model/compositores.js">Ficheiro javascript que define a estrutura dos compositores na base de dados</deliverable>
+        <deliverable path="CompositoresAPI/controllers/compositores.js">Ficheiro javascript para exportar as diversas operações que a API permite</deliverable>
+    </deliverables>
+</PR>
