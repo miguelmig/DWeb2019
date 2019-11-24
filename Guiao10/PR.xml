@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PR>
+    <metadata>
+        <keyname>DAW_MEI2019_TPCS</keyname>
+        <title>Servidores Web em NodeJS de upload e download de ficheiros</title>
+        <subtitle>Inserido no contexto do TPC9</subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">
+            José Carlos Ramalho
+        </supervisor>
+        <bdate>Novembro 2019</bdate>
+        <edate>Novembro 2019</edate>
+    </metadata>
+    
+    <workteam>
+        <worker>
+            <identifier>PG41088</identifier>
+            <name>Miguel Pimentel de Oliveira</name>
+            <email>pg41088@alunos.uminho.pt</email>
+            <git>https://github.com/miguelmig</git>
+        </worker>
+    </workteam>
+    
+    <abstract>
+        <p>
+            Criação de um servidor web em NodeJS para upload e download de ficheiros com recurso a <b>MongoDB</b> e <b>Multer</b> e também <b>JQuery</b>.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="uploadFiles/">Aplicação Web para dar upload de ficheiros</deliverable>
+        <deliverable path="uploadFiles/config/env.js">Ficheiro javascript com as configurações do website</deliverable>
+        <deliverable path="uploadFiles/public/javascripts/gficheiros.js">Ficheiro javascript com código JQuery para gerir a interface do lado do utilizador</deliverable>
+        <deliverable path="uploadFiles/routes/index.js">Ficheiro javascript para a raiz do website</deliverable>
+        <deliverable path="uploadFiles/routes/api.js">Ficheiro javascript para a API do website</deliverable>
+        <deliverable path="uploadFiles/model/ficheiros.js">Ficheiro javascript que define a estrutura dos metadatos dos ficheiros na base de dados</deliverable>
+        <deliverable path="uploadFiles/controllers/ficheiros.js">Ficheiro javascript para exportar as diversas operações que a API permite</deliverable>
+    </deliverables>
+</PR>
