@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  header.w3-container.w3-teal.w3-card-4
+    h1.w3-center #{title}
+  
+  .w3-container.w3-section
+    .w3-card-4
+      table.w3-table.w3-table-all
+        tr
+          th Sigla
+          th Designação
+          th Ver
+        each tipologia in tipologias        
+          tr(data-href='/tipologias/' + tipologia.id, class="clickable")
+            td= tipologia.sigla
+            td= tipologia.designacao
+            td
+              a(href='/tipologias/' + tipologia.id)
+                button.w3-button.w3-blue-grey Visualizar
+            
+

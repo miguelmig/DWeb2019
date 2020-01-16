@@ -1,0 +1,67 @@
+extends layout
+
+block content
+  header.w3-container.w3-teal.w3-card-4
+    h1.w3-center #{title}
+  
+  .w3-container.w3-section
+    h1 Entidade
+    .w3-card-4
+      table.w3-table.w3-table-all
+        tr
+          th Estado
+          th Sigla
+          if entidade.sioe !== ""
+            th SIOE
+          th Designação
+          th Internacional
+        tr
+            td= entidade.estado
+            td= entidade.sigla
+            if entidade.sioe !== ""
+              td= entidade.sioe
+            td= entidade.designacao
+            if entidade.internacional !== ""
+              td= entidade.internacional
+            else
+              td= "Não"
+            
+  .w3-container.w3-section
+    h1 Tipologias
+    .w3-card-4
+      table.w3-table.w3-table-all
+        tr
+          th Sigla
+          th Designação
+        each tipologia in tipologias        
+          tr
+            td= tipologia.sigla
+            td= tipologia.designacao
+            
+  .w3-container.w3-section
+    h1 Processos que é dono
+    .w3-card-4
+      table.w3-table.w3-table-all
+        tr
+          th Código
+          th Titulo
+        each don in dono        
+          tr
+            td= don.codigo
+              td= don.titulo
+
+  .w3-container.w3-section
+    h1 Processos que é participante
+    .w3-card-4
+      table.w3-table.w3-table-all
+        tr
+          th Código
+          th Titulo
+        each particip in participante        
+          tr
+            td= particip.codigo
+            td= particip.titulo
+            
+
+  a(href='/entidades')
+    button.w3-button.w3-blue-grey.w3-margin Voltar

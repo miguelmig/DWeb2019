@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PR>
+    <metadata>
+        <keyname>DAW_MEI2019_TESTE</keyname>
+        <title>Teste</title>
+        <subtitle></subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">
+            José Carlos Ramalho
+        </supervisor>
+        <bdate>Janeiro 2020</bdate>
+        <edate>Janeiro 2020</edate>
+    </metadata>
+    
+    <workteam>
+        <worker>
+            <identifier>PG41088</identifier>
+            <name>Miguel Pimentel de Oliveira</name>
+            <email>pg41088@alunos.uminho.pt</email>
+            <git>https://github.com/miguelmig</git>
+        </worker>
+    </workteam>
+    
+    <abstract>
+		<p>
+			Para pôr o servidor do exercicio 1 a funcionar, é necessário fazer mongoimport do arquivo.json,
+			que foi transformado em JSON usando um conversor em python(convert.py).
+			O comando para fazer import deve ser:
+			mongoimport -d teste -c obras --jsonArray arquivo.json
+		</p>
+		<p>
+			A persistências de dados foi feita recorrendo ao MongoDB, e como dito em cima, usei um conversor para
+			transformar o XML em JSON que depois foi importado usando mongoimport.
+		</p>
+		
+		<p>
+			As respostas às alineas estão no ficheiro Respostas.txt
+		</p>
+		
+		<p>
+			Para o exercício 2 foi incluido também as páginas das tipologias, apesar de não ter sido obrigatório.
+		</p>
+    </abstract>
+	
+    <deliverables>
+		<deliverable path="ex1/">Exercicio 1 do Teste</deliverable>
+		<deliverable path="Respostas.txt">Respostas às perguntas no Teste</deliverable>
+		<deliverable path="ex2/"> Exercicio 2 do Teste</deliverable>
+	</deliverables>
+
+</PR>

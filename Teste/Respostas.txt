@@ -1,0 +1,12 @@
+1.
+	* Existem um total de 546 entidades catalogadas.
+	* A entidade "Autoridade para as Condições de Trabalho" pertence às tipologias de "Administração
+	Pública"(tip_AP) e "Autoridades de supervisão e fiscalização"(tip_ASF).
+	
+	* A entidade "Autoridade Nacional de Segurança Rodoviária" (ent_ANSR) participa como iniciador no processo
+	com código "400.10.056" e titulo "Registo nacional de condutores".
+	
+	* A entidade "Colégio Militar" (ent_CMil) é dona do processo com código
+		"750.20.601" e titulo: "Realização de atividades de formação e treino animal"
+
+		
