@@ -22,6 +22,7 @@ var obrasSchema = new mongoose.Schema({
     tipo: String,
     compositor: String,
     arranjo: String,
+    editado: String,
     "inf-relacionada": infAdicionalSchema,
     instrumentos: {
         instrumento: [instrumentoSchema]
